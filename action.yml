@@ -1,4 +1,4 @@
-name: 'Hello World'
+name: 'Sound//Infra Publish'
 description: 'Greet someone and record the time'
 inputs:
   who-to-greet:  # id of input
@@ -11,3 +11,6 @@ outputs:
 runs:
   using: 'node12'
   main: 'index.js'
+branding:
+  icon: 'anchor'
+  color: 'blue
