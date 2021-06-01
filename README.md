@@ -1,12 +1,16 @@
-# Hello world JavaScript action
+# Sound//Infra Publish Action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log. To learn how this action was built, see "[Creating a JavaScript action](https://help.github.com/en/articles/creating-a-javascript-action)" in the GitHub Help documentation.
+This action publishes the contents of your publish directory to your domain,
+Powered by Sound//Infra.
 
 ## Inputs
 
-### `who-to-greet`
+### `publish-domain`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** The name of your domain, for example, `myblog.com`.
+
+### `publish-directory`
+The directory to be published, defaults to `"public"`.
 
 ## Outputs
 
@@ -17,7 +21,7 @@ The time we greeted you.
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-javascript-action@main
+uses: soundinfra/publish-action@v1.0
 with:
-  who-to-greet: 'Mona the Octocat'
+  publish-domain: 'myblog.com'
 ```

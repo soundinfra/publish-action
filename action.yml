@@ -1,10 +1,14 @@
 name: 'Sound//Infra Publish'
-description: 'Greet someone and record the time'
+description: 'Publish to your domain, Powered by Sound//Infra.'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  publish-domain:
+    description: 'Your domain, Powered by Sound//Infra'
     required: true
     default: 'World'
+  publish-directory:
+    description: 'The directory in your repository to publish.'
+    required: false
+    default: 'public'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
